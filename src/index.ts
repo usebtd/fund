@@ -1,6 +1,7 @@
 export { Fund } from "./client";
 export type { FundAuthentication, FundOptions, RetryOptions } from "./config";
 export * from "./errors";
+export * from "./grok";
 export {
   FetchTransport,
   type DebugEvent,

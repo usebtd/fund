@@ -44,7 +44,7 @@ describe("utilities", () => {
   });
 
   it("exports version and base error", () => {
-    expect(FUND_SDK_VERSION).toBe("0.8.1");
+    expect(FUND_SDK_VERSION).toBe("0.8.13");
     expect(new FundError("failure")).toBeInstanceOf(Error);
   });
 });
