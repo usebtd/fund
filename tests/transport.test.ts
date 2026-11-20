@@ -22,7 +22,7 @@ describe("FetchTransport", () => {
     const fetchMock = vi.fn<typeof fetch>(async (_input, init) => {
       const headers = new Headers(init?.headers);
       expect(headers.get("x-api-key")).toBe("secret");
-      expect(headers.get("x-fund-sdk-version")).toBe("0.8.1");
+      expect(headers.get("x-fund-sdk-version")).toBe("0.8.13");
       expect(headers.get("idempotency-key")).toBe("idem-1");
       expect(init?.body).toBe('{"name":"Acme"}');
       return json({ id: "1" });
